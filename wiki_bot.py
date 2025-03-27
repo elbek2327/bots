@@ -46,7 +46,7 @@ async def send_message(message: Message) -> None:
         respond = wikipedia.summary(message.text)
         await message.answer(respond)
     except:
-        await message.answer("Can not foung anything on this topic:(")
+        await message.answer("Could not find anything on this topic:(")
 
 
 
